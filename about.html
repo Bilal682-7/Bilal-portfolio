@@ -7,9 +7,16 @@
     <meta name="description" content="Learn about Mohammad Bilal Sikandar, his education, technical skills, and professional experience.">
     <title>About Me | Mohammad Bilal Sikandar</title>
 
-    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
-    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px) and (max-width: 1023px)">
-    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1024px)">
+    <!-- These stylesheets apply different layouts depending on the screen width. -->
+<link href="css/desktop.css" rel="stylesheet"
+      media="only screen and (min-width: 960px)">
+
+<link href="css/tablet.css" rel="stylesheet"
+      media="only screen and (min-width: 481px) and (max-width: 959px)">
+
+<link href="css/mobile.css" rel="stylesheet"
+      media="only screen and (max-width: 480px)">
+
 </head>
 
 <body>
@@ -25,11 +32,12 @@
         </nav>
     </header>
 
+    <!-- This section contains my personal photo and a short introduction about myself. -->
     <main>
         <section class="about-intro">
             <h2>About Me</h2>
 
-            <img src="images/profile.jpg"
+            <img src="images/Profile.jpg"
                  alt="Portrait of Mohammad Bilal Sikandar"
                  width="280"
                  height="280">
@@ -65,6 +73,7 @@
             </article>
         </section>
 
+        <!-- An unordered list is used to display my technical skills. -->
         <section class="skills">
             <h2>Technical Skills</h2>
 
@@ -109,9 +118,11 @@
                 my background, interests, and career goals.
             </p>
 
+            <!-- HTML5 video controls allow visitors to play and pause my introduction.
+     The poster image is displayed before the video starts playing. -->
             <video controls
                    preload="metadata"
-                   poster="images/video-poster.jpg"
+                   poster="images/Video-Poster.png"
                    width="560">
                 <source src="videos/introduction.mp4"
                         type="video/mp4">
@@ -125,7 +136,7 @@
         <p>
             Email:
             <a href="mailto:mohommad.sikandar@ontariotechu.net">
-                mohommad.sikandar@ontariotechu.net
+                mohammad.sikandar@ontariotechu.net
             </a>
         </p>
     </footer>
