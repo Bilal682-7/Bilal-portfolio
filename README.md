@@ -1,86 +1,86 @@
-# Mohammad Bilal Sikandar — Personal Portfolio
+# Mohammad Bilal Sikandar — Personal Portfolio Website
 
-## Colour Scheme
+## About the Project
 
-I created a custom colour palette using Adobe Color to give my portfolio a professional, cybersecurity-inspired appearance.
+This is my personal portfolio website for INFR3120 Web and Scripting Programming at Ontario Tech University.
 
-The five main colours are:
+I built the website using HTML5 and CSS3. It has four pages: Home, About Me, Projects, and Contact.
 
-- **Dark Navy (`#0B1426`):** Main website background.
-- **Navy Blue (`#172554`):** Header and gradient backgrounds.
-- **Blue (`#2563EB`):** Navigation highlights and buttons.
-- **Teal (`#5EEAD4`):** Headings, links, and accents.
-- **Light Grey (`#E2E8F0`):** Main text for readability.
+The goal was to create a website where I could introduce myself, share some of my projects, and provide a way for people to contact me.
 
-I selected a custom colour harmony in Adobe Color because I wanted to combine dark blue backgrounds with contrasting teal accents and light text.
+## Website Pages
+
+- **Home (`index.html`):** A short introduction about me and my interests.
+- **About Me (`about.html`):** Information about my education, experience, skills, personal photo, and introduction video.
+- **Projects (`projects.html`):** Four projects and assignments I've worked on involving networking, programming, and web development.
+- **Contact (`contact.html`):** A contact form with HTML5 input validation.
 
 ## Responsive Design
 
-I used three separate CSS files to make my portfolio responsive on mobile, tablet, and desktop screens.
+I used three separate CSS files to make the website work on different screen sizes.
 
-- **Mobile (`mobile.css`):** 480px and below.
-- **Tablet (`tablet.css`):** 481px to 959px.
 - **Desktop (`desktop.css`):** 960px and above.
+- **Tablet (`tablet.css`):** 481px to 959px.
+- **Mobile (`mobile.css`):** 480px and below.
 
-I chose these breakpoints based on the media query examples in the Week 3 lecture.
+I based these breakpoints on the examples covered in the Week 3 lecture.
 
-The mobile layout stacks the navigation links and content cards vertically. The tablet layout displays two highlight cards per row, while the desktop layout displays three.
+The layout changes depending on the device. On desktop, the highlight cards are displayed three per row. On tablet, they are displayed two per row, and on mobile, they stack vertically.
 
-I used percentage-based widths to create a fluid layout that adjusts to different screen sizes. I did not use Flexbox, as required by the assignment.
+I used percentage-based widths to help the layout adjust to different screen sizes without using Flexbox.
 
-## CSS Gradients
+## Colours and Gradients
 
-I used two types of linear gradients in my portfolio website.
+I used Adobe Color to help choose a dark blue colour scheme for the website.
 
-**1. Angle-Based Linear Gradient**
+The main colours are:
 
-I used `linear-gradient(135deg, #0b1426, #172554, #1e40af)` in the website header. This creates a diagonal colour transition between dark navy and blue.
+- `#0B1426` — Dark navy, used for the main background.
+- `#172554` — Navy blue, used in the header and backgrounds.
+- `#2563EB` — Bright blue, used for buttons and highlights.
+- `#5EEAD4` — Light teal, used for headings and accents.
+- `#E2E8F0` — Light grey, used for the main text.
 
-**2. Direction-Based Linear Gradient**
+I chose these colours to give the website a clean design inspired by cybersecurity while keeping the text easy to read.
 
-I used `linear-gradient(to right, #172554, #0f2944)` in the homepage hero section. This creates a horizontal colour transition from left to right.
+I also used two types of CSS gradients.
 
-Both gradients help maintain a consistent blue-themed design throughout the website.
+**Angle-based gradient:**
 
-## Project Overview
+`linear-gradient(135deg,#0b1426,#172554,#1e40af)`
 
-This is my personal portfolio website for INFR3120 — Web and Scripting Programming at Ontario Tech University.
+This is used in the header to create a diagonal transition between different shades of blue.
 
-The website introduces my background as a Networking and IT Security student and highlights my education, technical skills, work experience, and academic projects.
+**Direction-based gradient:**
 
-The portfolio contains four HTML pages:
+`linear-gradient(to right, #172554, #0f2944)`
 
-- **Home (`index.html`):** Personal introduction and areas of interest.
-- **About Me (`about.html`):** Education, technical skills, work experience, personal photograph, and introduction video.
-- **Projects (`projects.html`):** Four projects involving networking, programming, and web development.
-- **Contact (`contact.html`):** Contact information and an HTML5 form with required-field, email, and cellphone validation.
+This is used in the Home page introduction section to create a left-to-right colour transition.
 
-The website uses HTML5 and CSS3 techniques covered in the course, including semantic elements, external stylesheets, fluid layouts, media queries, and gradients.
+Both gradients help keep the design consistent throughout the website.
 
-## Code Sources and Attribution
+## Code Sources
 
-**Course materials:** INFR3120 Web and Scripting Programming, Weeks 1–4 lecture notes.
+I used the INFR3120 course materials from Weeks 1–4 as references for HTML5, CSS3, forms, and responsive design.
 
-**AI assistance:** ChatGPT (OpenAI) was used to help draft and explain portions of the HTML, CSS, and README documentation.
+I also used ChatGPT (OpenAI) for help drafting and understanding parts of the HTML, CSS, and documentation.
 
-The website uses HTML5 and CSS3 concepts covered in the course, including semantic HTML, forms, gradients, fluid layouts, and media queries.
+## Testing
 
-Before submission, the code must be reviewed to ensure compliance with the assignment's maximum 10% external-code allowance. Any retained external code must be attributed and explained in code comments.
+I tested the website using the following tools:
 
-## Testing and Validation
+- **W3C HTML Validator:** All four HTML pages passed validation.
+- **W3C CSS Validator:** All three CSS files passed validation.
+- **W3C Link Checker:** No broken HTTP links were reported.
+- **WAVE:** Home, Projects, and Contact had no reported errors, contrast errors, or alerts. The About Me page had no errors or contrast errors, with one informational alert related to the HTML5 video.
+- **Responsive testing:** Checked the layout on desktop, tablet, and mobile screen sizes.
+- **Form testing:** Checked required fields, email validation, cellphone number validation, and the reset button.
+- **Spelling:** Reviewed all four pages and found no spelling issues.
 
-The following checks are required before submission:
+## GitHub and Live Website
 
-- **HTML Validation:** Passed W3C validation for all four HTML pages (index.html, about.html, projects.html, contact.html).
-- **CSS Validation:** Passed W3C validation for all three stylesheets (desktop.css, tablet.css, mobile.css).
-- **Link Testing:** W3C Link Checker — Pending
-- **Spelling:** Spelling review — Pending
-- **Accessibility:** WAVE Accessibility Checker — Pending
-- **Responsive Layout:** Mobile, tablet, and desktop — Pending final verification
+I uploaded the project to GitHub and used GitHub Pages to publish the website.
 
-### Contact Form Testing
+**GitHub Repository:** https://github.com/Bilal682-7/Bilal-portfolio
 
-- Required-field validation — Passed
-- Email format validation — Passed
-- Cellphone number validation — Passed
-- Reset button — Passed
+**Live Website:** https://bilal682-7.github.io/Bilal-portfolio/
